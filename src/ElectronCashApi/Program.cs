@@ -8,7 +8,7 @@ namespace ElectronCashApi
         static void Main(string[] args)
         {
             JsonRpc.RegisterMethods(typeof(Program).Assembly);
-            JsonRpc.Start("http://0.0.0.0:80");
+            JsonRpc.Start("http://*:80");
 
             Console.ReadLine();
         }
